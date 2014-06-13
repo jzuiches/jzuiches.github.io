@@ -1,0 +1,66 @@
+body	{
+	background-image:url('http://www.psdgraphics.com/file/light-wooden-background.jpg');
+}
+
+.header	{
+	height:70px;
+	width:100%;
+	background-color:#C2A385;
+	border-radius:5px;
+	position:fixed;
+}
+.line-separator	{
+	height:5px;
+	background:#ACA6A0;
+	border-bottom:3px solid#5A4E41;
+}
+.line-separatorweek	{
+	height:5px;
+	background:#ACA6A0;
+	border-bottom:3px solid#5A4E41;
+	margin-left:200px;
+}
+h1	{
+	font-family:"Impact", cursive, sans-serif;
+	font-size:40px;
+	color:#432100;
+	text-shadow: 2px 2px #281400;
+	positon:absolute;
+}
+img  {
+	height:200px;
+	width:250px;
+	border-radius:20px;
+}
+.blogpoststech	{
+	float:left;
+	margin-left:200px;
+	
+}
+.blogpostscultural	{
+	float:right;
+	margin-right:200px;
+}
+h2	{
+	text-align:center;
+	color:#432100;
+}
+h4	{
+	text-align:center;
+	color:#432100;
+}
+.week2	{
+	clear:both;
+}
+.footer	{
+	height:40px;
+	width:100%;
+	background-color:#C2A385;
+	border-radius:5px;
+	clear:both;
+	}
+
+h5	{
+	text-align:center;
+	color:#432100;
+}
