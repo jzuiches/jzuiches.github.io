@@ -1,0 +1,25 @@
+ img{
+      width:100px;
+      margin-left:150px;}
+    h1 {
+        font-family:Verdana;
+        color: blue;
+        text-align:center;
+    }
+    h2 {
+        font-family: Verdana;
+        color:red;
+        text-align:center;
+    }
+
+p {
+    font-family:Verdana;
+    color:white;
+}
+   li{
+       font-family:Verdana;
+   }
+    ol {
+      background-color:red;
+    }
+

@@ -1,0 +1,187 @@
+/* You'll want to make the site responsive and nice looking here. Have fun!*/
+
+#wrapper {
+  text-align: left;
+  margin: 0px auto;
+  padding: 0px;
+  border:0;
+  width: 100%;
+  background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
+  color:black;
+  font-size: 2em;
+}
+
+#side-a ul{
+  list-style-type:none;
+}
+
+a {
+  color:black;
+}
+
+#header {
+  margin: 0 0 1.5625% 0;
+  background: black;
+  color: white;
+}
+
+#side-a {
+  float: left;
+  width: 15.625%;
+}
+
+#side-a li{
+  padding-top: 2.08333%;
+}
+
+#side-b {
+  float: right;
+  width: 15.625%;
+}
+
+#content {
+  float: left;
+  width: 68%;
+}
+
+#footer {
+  clear: both;
+  background: #A2A2A2;
+}
+@media screen and (max-width:970px){
+
+img {
+  width:100%;
+}
+#side-a ul{
+  list-style-type:none;
+}
+
+a {
+  color:black;
+}
+
+#header {
+  margin: 0 0 1.5625% 0;
+  background: black;
+  color: white;
+}
+
+#side-a {
+  float: left;
+  width: 100%;
+}
+
+#side-a li{
+  padding-top: 2.08333%;
+}
+
+#side-b {
+  float: right;
+  width: 100%;
+}
+
+#content {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width:720px){
+#wrapper{
+  transition:all 1s linear;
+}
+img {
+  width:100%;
+}
+#side-a ul{
+  list-style-type:none;
+}
+
+#side-a li{
+  display:inline;
+  text-align: center;
+}
+a {
+  color:red;
+  margin-right: 10%;
+}
+
+#header {
+  margin: 0 0 1.5625% 0;
+  background: black;
+  color: white;
+}
+
+#side-a {
+  float: left;
+  width: 100%;
+}
+
+#side-a li{
+  padding-top: 2.08333%;
+}
+
+#side-b {
+  float: right;
+  width: 100%;
+}
+
+#content {
+  float: left;
+  width: 100%;
+}
+
+
+}
+@media screen and (max-width:480px){
+
+#wrapper{
+  transition:all 1s linear;
+  font-size:1em;
+}
+img {
+  width:100%;
+}
+#side-a ul{
+  list-style-type:none;
+  width:100%;
+ }
+
+#side-a li{
+  display:inline;
+  text-align: center;
+}
+a {
+  color:red;
+  margin-right: 10%;
+}
+
+#header {
+  margin: 0 0 1.5625% 0;
+  background: black;
+  color: white;
+  font-size: 2em;
+}
+
+#side-a {
+  float: left;
+  width: 100%;
+}
+
+#side-a li{
+  padding-top: 2.08333%;
+}
+
+#side-b {
+  float: right;
+  width: 100%;
+}
+
+#content {
+  float: left;
+  width: 100%;
+}
+
+
+
+}
