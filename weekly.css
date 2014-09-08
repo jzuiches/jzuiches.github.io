@@ -1,8 +1,6 @@
 html {
-  background: url("http://www.summitpost.org/images/medium/582884.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("images/Shastadark.jpg") no-repeat center center fixed;
+
   background-size: cover;
 }
 .header {
@@ -35,7 +33,7 @@ a:hover {color:white;}  /* mouse over link */
 a:active {color:#CAD8E5;}
 
 .paper  {
-      background-color: white;
+      background-color: #FFFFF0;
       margin-left:150px;
       margin-right:25px;
       margin-top:0px;
@@ -46,7 +44,18 @@ a:active {color:#CAD8E5;}
       padding-left: 30px;
       float:right;
 }
-p   {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+.paper h4{
+  font-family: Optima;
+  text-align:center;
+
 }
 
+.paper h3{
+  font-family:Optima;
+}
+p   {
+    font-family: "Book Antiqua","Palatino Linotype",  Palatino, serif;
+}
+img {
+  height: 100px;
+}

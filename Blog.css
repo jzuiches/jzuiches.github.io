@@ -48,6 +48,12 @@ h2	{
 h4	{
 	text-align:center;
 	color:#432100;
+	text-decoration:none;
+}
+a href	{
+	text-align:center;
+	color:#432100;
+	text-decoration:none;
 }
 .week2	{
 	clear:both;
@@ -59,8 +65,21 @@ h4	{
 	border-radius:5px;
 	clear:both;
 	}
-
+.footerpage	{
+	position:fixed;
+	height:40px;
+	width:100%;
+	background-color:#C2A385;
+	border-radius:5px;
+	clear:both;
+}
 h5	{
 	text-align:center;
 	color:#432100;
 }
+a:hover	{
+	color:black;
+	font-weight:bold;
+	text-decoration:none;
+}
+

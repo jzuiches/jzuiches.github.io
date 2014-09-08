@@ -1,26 +1,44 @@
-html {
-  background: url("http://www.summitpost.org/images/medium/582884.jpg") no-repeat center center fixed;
-  background-size: cover;
+html  {
 }
+
+
+body{background: url("images/Shastadark.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+      margin:0;
+      padding:0;
+      height:100%;
+}
+
+#wrapper {
+      min-height:100%;
+      position:relative;
+}
+
+
 .header {
         margin-top:200px;
         font-size: 75px;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         color:white;
-        text-align:center;
+        margin-left: 600px;
+        padding:10px;
+
 }
 .line-separator {
   height:5px;
   background:#CAD8E5;
   border-bottom:2px solid#5A4E41;
-  margin-left:400px;
+  margin-left:300px;
   margin-right:-10px;
   border-radius:7px;
 }
 .navbar {
-  margin-left:400px;
+  margin-left:300px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color:#CAD8E5;
+  padding:10px;
+  padding-bottom: 80px;
 
 }
 a {color:#CAD8E5;
@@ -29,3 +47,20 @@ a:visited {color:#CAD8E5;
           text-decoration: none;}  /* visited link */
 a:hover {color:white;}  /* mouse over link */
 a:active {color:#CAD8E5;}
+
+#footer{
+  width:100%;
+  height:80px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+.footerline {
+  height:5px;
+  background:#CAD8E5;
+  border-bottom:2px solid#5A4E41;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  border-radius:7px;
+}
