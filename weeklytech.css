@@ -58,5 +58,6 @@ p   {
 }
 img {
   height: 200px;
+  padding:20px;
   float:left;
 }
