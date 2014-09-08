@@ -33,13 +33,14 @@
       On to positioning:
       The three terms I will explain are <b>absolute</b>, <b>relative</b> and <b>fixed</b>.</p>
       <p><b>Absolute</b></p>
-      Absolute is a properties that is entered into CSS like this.</p>
+      <p>Absolute is a properties that is entered into CSS like this.</p>
       <img src="images/positionabsolute.png"/>
       <p>
       When an element is in position: absolute it is positioned on the screen relative to a "parent" that is not in static position.  Now there is some new terminology here that we should go over. Static position is the default position of an element.  It is where an element falls when your computer reads and html and determines where things are to be put according to the code.  IF nothing is specified elements are by default placed one on top of the other.  Here is a picture of a static position of two blocks. One on top of the other determined by what code came first in the program. </p>
         <img src="images/positionstatic.png"/>
 <p>The other term is parent.  The parent of an element code written above the element.  The element is nested inside other elements. The first element up is the parent.  In absolute positioning the parent is any other element that has it's position specified as either absolute itself or relative.  Once the original element finds its parent then it can be positioned relative to that parent using the terms top:, bottom:, left:, and right:.n  If there is no parent element these terms are used relative to the whole screen. Here is an example of a red block whose parent is the blue box and that was positioned 50 pixels from the top of its parent.
 </p>
+<p></p>
 <img src="images/parentchild.png"/>
 <p>The next position term is relative.  Positioning an element relative means that it is relative to its static or default position. So if there is no designation of top: bottom: ect. it will land the same place as the default.  But if there are pixels or percentages written in for say top:. The element will move that distance down from its original default position.</p>
 <p>
