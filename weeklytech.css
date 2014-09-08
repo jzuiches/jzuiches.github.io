@@ -1,0 +1,62 @@
+html {
+  background: url("images/Shastadark.jpg") no-repeat center center fixed;
+
+}
+.header {
+        margin-top:25px;
+        font-size: 75px;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color:white;
+        margin-left:100px;
+}
+.line-separator {
+  height:5px;
+  background:#CAD8E5;
+  border-bottom:2px solid#5A4E41;
+  margin-left:100px;
+  margin-right:-10px;
+  border-radius:7px;
+}
+.navbar {
+  margin-left:100px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color:#CAD8E5;
+  float:left;
+
+}
+a {color:#CAD8E5;
+    text-decoration: none;}      /* unvisited link */
+a:visited {color:#CAD8E5;
+          text-decoration: none;}  /* visited link */
+a:hover {color:white;}  /* mouse over link */
+a:active {color:#CAD8E5;}
+
+.paper  {
+      background-color: #FFFFF0;
+      margin-left:150px;
+      margin-right:25px;
+      margin-top:0px;
+      margin-bottom:20px;
+      height: 80%;
+      width: 1000px;
+      border-radius: 20px;
+      padding-left: 30px;
+      float:right;
+}
+.paper h4{
+  font-family: "Oxygen";
+  text-align:center;
+
+}
+
+.paper h3{
+  font-family:"Oxygen";
+}
+p   {
+    font-family: "Indie Flower","Book Antiqua","Palatino Linotype",  Palatino, serif;
+    font-size: 16px;
+}
+img {
+  height: 200px;
+  float:left;
+}
