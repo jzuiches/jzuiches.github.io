@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Gloria+Hallelujah|Indie+Flower|Oxygen' rel='stylesheet' type='text/css'>
+
+   <link type="text/css" rel = "stylesheet" href="weeklytech.css"/>
+   <title>Practice</title>
+ </head>
+   <body>
+     <div class="header">
+       Joe's Blog
+
+     </div>
+     <div class="line-separator">
+     </div>
+      <div class="navbar">
+      <h4><a href="index.html">
+        home</a></h4>
+      <h4><a href="contact.html">contact</a></h4>
+   </div>
+     <div class="paper">
+      <h3>Technical post 5</h3>
+      <h4>About as basic as it gets: Class in Ruby</h4>
+<p>When we use all those basic building blocks in Ruby (i.e. words, numbers, symbols) we are using objects. Objects are what its all about. It is an object oriented language. We type objects and group them together so they resemble a thing we have in our head.  Similar to descibing things in "the world". I'm not a neuroscientist/philosopher but we could say that our representations in our brain are clustered images and sounds (building blocks) that represent a thing in "the world" even is meaning that they are an abstaction from or manipulation of the sensory information given to us from "the world".  This is not going the way I imagined. I have about as much control over my stream of consciousness as I do over objects in Ruby. That's funny! Laugh! Damn it! I am beginning to see why its so hard to write about anything technical without first assuming a modicum of technical vocabulary.  I will try to write at about the level I'm at or just below. As though I'm talking to me from a couple of days ago. Heroku seems like a nice site! I'm going to have to totally rewrite all these posts to make them look professional. Onto classes:
+  The thing about objects is that they can't scale up When you create an object you create this one little thing that has methods and attributes for itself but the methods and attributes are stuck right there in the program.  Now by defining a class we can write just once the attributes and methods of an object and have the class act like an umbrella for all those objects giving them those same attributes and methods. Pretty easy concept. Now how do we use it?</p>
+  <p>So we create a class by typing "class MyClass".  The capitalized letters is the only thing you have to remember. Within the class are basically two things. One, is initialize an object. That gives the objects of this class attributes. Attributes are the basic properties of a class. One analogy is the state of a system in physics.  The system is the class. The particles in the system are the objects and the position and momentum of the particles are its attributes.  That's a starting point but I said there was two things. One, Attributes and now two, methods. Methods are the things that that object can do.  Objects as objects can do a lot of things in Ruby straight away but when you say they are a part of your new class you can add methods that they are capable of doing giving them more "functionality".  So attribute and methods, thats about it, the objects in this class have these properties (attributes) and can do these things (methods). Once I define those in my class definition I can us the #new "constructor" to give "birth" to as many objects of that class as I want and all of them will be "born" with these attributes and methods built-in never having to go through school or DBC, nothing. To use technical terms, the class has been instantiated. I have created on object that is an instance of that class. And the methods that have been written just for that class are called...wait for it...instance methods!</p>
+  <p>The objects in Ruby can reflect the real world because the the format of all the objects in the language go from general Class to more and more specific classes and objects.  Down to the final objects that are manipulating the very primitives at the bottom of it all. These Objects are like people they have inherited traits (methods) and they can learn new methods that only they know (singleton methods) and with these they can change and move the very basic data or primitives that they are given. Its a very dynamic design. A structure that can chang its own structure. Even what is inherited can change over time as the instance methods of classes and superclasses change and effect the abilities of their ancestors.
+
+<!--you can override a method in a class by defining it a second time in the same class.  The second definition, the one lower on the program will take precidence
+You can break apart or reopen a class definition.  Just write new Class the same as the original definition and you can add methods
+Instance variable define the state of the object. They can be used in other method that are defined for that class. They us @variable = variable
+Important aspect of instance variables is that they are the name across methods in the class. They are the same across the whole class which is more or less defined by the methods it uses. Thats what initialize does.it says here are the variable for this object in this class
+initialize sets the initial state of an object and creates instance variables. To return these variables it is customary to make methods that return them so we can check what the intial state of the object is.
+So we save info about an object with the instance variables and we retrieve that info with the methods that return the instance variables. I think we can get rid of one step, the creation of methods by using the attr_reader
+You can change the instance avariables in methods other than initialize by @variable = @variable + 2. Or something. Usuallly they are set_something methods
+Set_ methods are good so when we create an object we don't have to remember what arguments goes in the initialize method and what order they go in
+You can have a subclass and a superclass. Subclasses inherit superclass methods. Its just a class inside a class just like class itself is the subclass of object.
+Ruby objects only have single inheritence. So there is a single line up and down not a tree of inheritance. But modules can be grafted onto the line to give you whatever functionality you want
+you can have singleton methods for the object that is the class for other objects.  So its a method accessed only by the class not within the class
+Class method or singleton methods for the object that is a class are important when what you need to evaluate are the objects in that class. The method acts above the object to encompass all of them
+Constants: Assigned with capital letters maybe all caps. Constant definitions usually go at the top of a class definition
+Contants my define a list for instance variables to pick from
+To refer to a constant outside of the class it was defined it use ::
+like in Math::PI except that Math is a module not a class
+You can assign a constant to a variable and then add or modify that variable without a warning
+
+Objects are like people they have inherited traits (methods) and they can learn new methods that only they know (singleton methods). Its a very dynamic design. Even what is inherited can change over time as the instance method of classes and superclasses change and effect the abilities of their ancestors. -->
+
+
+      </p>
+     </div>
+   </body>
+</html>
