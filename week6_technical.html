@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Gloria+Hallelujah|Indie+Flower|Oxygen' rel='stylesheet' type='text/css'>
+
+   <link type="text/css" rel = "stylesheet" href="weeklytech.css"/>
+   <title>Practice</title>
+ </head>
+   <body>
+     <div class="header">
+       Joe's Blog
+
+     </div>
+     <div class="line-separator">
+     </div>
+      <div class="navbar">
+      <h4><a href="index.html">
+        home</a></h4>
+      <h4><a href="contact.html">contact</a></h4>
+   </div>
+     <div class="paper">
+      <h3>Technical post 6</h3>
+      <h4>Blocks, Procs and Lambdas</h4>
+<p><em>BLOCKS</em>
+  Blocks are chunks of code that are not objects in Ruby.  They are surrounded and signified by either {} or do..end. Blocks are often used with other methods, for example, in order to itereate over an array. Many times with iterative methods the blocks have the form {|i| code }.  Where "i" is the individual element within the array and the block of code after it is done to each instance of the element within the array.  Methods that iterate have this built in ability to give control to the block and transferring back to the method being called.  Another way to do this when writing your own method is to use the keyword yield. This enables the method to run to the point of the yield keyword and then transfer to the code written in the block. Methods that we create that have parameters can use those parameters to determine whether the block associated with yield will run. This is a popular way to create assert method.  An assert method can be built so that it gives an error message if the parameters of both the method and the block are the same.
+  <p></p>
+  <p> Here is an example of a block from codecademy.
+    def double num
+      puts "you have entered the block"
+      yield num
+    end
+    double(3) {|n| 2*n}
+  </p>
+  This method is called double and it accepts one parameter "num". It also accepts a block of code because it has the yield keyword inside the method. The method would not know what to do with that code if there was not the yield keyword. When the method is called it puts the sentence they runs the block after it and give double the number that is the method argument.
+</p>
+<p><em>PROCS</em>
+  To be perfectly clear and blunt. Procs are blocks that can be saved as a variable.  This does an important thing to blocks. It changes them into an object. Once you make something into an object in Ruby you give it all sorts of capabilities. To define a proc you set your variable to Proc.new {block}. So it looks like this:</p>
+  <p> variable = Proc.new {|x| block of code}</p>
+  <p> To then pass this proc to a method we use the variable name with an "&" before it. This converts the proc back to a block that the method is expecting. The most important part of a proc is that you can call it by it's name and don't have to type the block of code over and over.  This helps to make your code D.R.Y.</p>
+  <p>Procs just like blocks can be called by a method using the yield keyword. They can also be called in Ruby with the #call method. Like this:</p>
+  <p>proc_variable.call</p>
+  <p><em>LAMBDA<em></p>
+  <p>Lambdas are the last of this group and they are almost identical to procs. The main difference is the keyword lambda that we can use when creating the variable or saved block. As opposed to using the class designation Proc.new. The two main functional differences between a lambda and a proc is that a lambda will create an error if the number of arguments passed to it is greater than the number of parameters whereas a proc will give those extra arguments a nil value. The other difference is what each returns. The lambda returns control to the method that called it and the proc does not. So it appears that the proc overrides the return value of the method.</p>
+  In review: Blocks are code that is written between {} or between the keywords do...end. Procs are blocks of code that have been passed to a variable and therefore make them objects. Lambdas are the same as procs but when passed in a method return the value of the method not necessarily the value of the lambda.
+
+
+
+
+      </p>
+     </div>
+   </body>
+</html>
