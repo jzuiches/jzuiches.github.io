@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Gloria+Hallelujah|Indie+Flower|Oxygen' rel='stylesheet' type='text/css'>
+
+   <link type="text/css" rel = "stylesheet" href="weeklytech.css"/>
+   <title>Practice</title>
+ </head>
+   <body>
+     <div class="header">
+       Joe's Blog
+
+     </div>
+     <div class="line-separator">
+     </div>
+      <div class="navbar">
+      <h4><a href="index.html">
+        home</a></h4>
+      <h4><a href="contact.html">contact</a></h4>
+   </div>
+     <div class="paper">
+      <h3>Technical post 7</h3>
+      <h4>On SQL Problems:</h4>
+<p><em>Injection</em></p>
+<p>An SQL injection is an attack on a database. This attack is usually carried out through a website that has access to a database but could be used against any SQL database. The attack is initiated by the "injection" of a query into the database disguised as input data. From this query it seems that the person that created the attack can control some or all of the database. This can be used to read sensitive data or modify the database or even gain control of the operating system. Many times it seems that the query that is used is a "table dump" command that gives the content of the database to the attacker. The two ways that wikipedia says the attack is initiated is through vulnerabilities in the user input software. These two vulnerabilities are that the input is 1) incorrectly filtered for string literal escape characters or 2) the user input is not strongly typed.</p>
+<p>String literal escape characters are characters in the code that are used to keep commonly typed numbers or symbols from being misinterpreted by the computer program. A common symbol that can be misconstued by a computer is the "". Quotation marks begin and end a string of characters in a computer code but may also be needed to designate an actual quote with a text.  These two different operations are defined by the use of escape characters to tell the program to not interpret these in the usual string literal way but to use them in the human quotative way.  It seems that this could be one way that an attacker could write code that is misinterpreted by the program.<p/>
+  <p>The other vulnerablity mentioned is that the user input is not strongly typed.  Here in general is another way that a program can misinterprete a line of code where the code could appear to a human observer to have multiple possible meanings.  Program languages are usually referred to a strongly or weekly typed. This itself can have many meanings. The easiest to understand is that a language that makes assumptions about the "type" of an object, for example the type="string" or integer, that language is said to be weakly typed. A language that makes no assumptions about the type of an object and my just run an error until that onject type is explicitly stated is a strongly typed language. Like was said before weekly typed languages just like incorrect filtering for escape characters seem to increase the possibility for a somewhat ambiguous meaning for a statement.</p>
+  <p>The methods being used to combat SQL injection are parameterized statements, enforcement at the coding level, escaping, pattern check, and database permissions.</p>
+  <p> Parameterized statements seems to mean that parameters are set as to what can be placed as input. This places a constraint on what counts as valid input and an injection would be outside the bounds of this constraint and would not be used. The second way of mitigating injection is to create object relational mapping which is a different kind of relational mapping than what SQL uses.  Object relational maps objects for object oriented languages as nodes.  Escaping seems like a kind of parameterization and attempts to fill all the escape hole possibilities in the SQL code. Pattern check again seems to look at the inputed data and make sure it is the type it says it is and lastly database permission is a way to keep a web application from being able to access all the information on a database and therefore limit the exposure of the database from injection.</p>
+
+
+
+
+
+     </div>
+   </body>
+</html>
