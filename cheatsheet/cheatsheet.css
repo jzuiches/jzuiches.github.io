@@ -1,0 +1,195 @@
+html {
+  background:
+
+
+    url("images/multiverse.jpg") no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+.header {
+        margin-top:100px;
+        font-size: 75px;
+        font-family: ""Times New Roman", cursive, sans-serif";
+        color:white;
+        text-align: left;
+        text-shadow: 2px 2px #5A4E41;
+        padding-left: 1.8em;
+        opacity: 0.7;
+}
+h3  {
+    font-size:40px;
+}
+
+.line-separator {
+  height:5px;
+  background:white;
+  border-bottom:2px solid#5A4E41;
+
+  margin-right:-10px;
+  border-radius:7px;
+  opacity:0.8;
+}
+.navigation {
+  height: 600px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom,
+    left top, from(rgba(0,0,0,5)), to(rgba(0,0,0,0)));
+  position:relative;
+}
+.navigation span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    ;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.navigation:hover span {
+    opacity: 1;
+}
+
+a:link, a:visited {
+    position:absolute;
+    display: block;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    text-shadow: 1px 1px #5A4E41;
+    padding-top: 40px;
+    opacity:0.7;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+a:hover, a:active {
+    transition: all 0.3s ease-out;
+    opacity: 0.9;
+}
+
+#ruby {
+    margin-top: 70px;
+    margin-left: 400px;
+    color: #ffffff;
+    background-color: #98bf21;
+}
+#html {
+    margin-top: 0px;
+    margin-left: 740px;
+    color: #ffffff;
+    background-color: #94B8FF;
+}
+#css {
+    margin-top: 0px;
+    margin-left: 110px;
+    color: #ffffff;
+    background-color: green;
+}
+#javascript {
+    margin-top: 290px;
+    margin-left: 170px;
+    color: #ffffff;
+    background-color: purple;
+}
+#sql {
+    margin-top: 120px;
+    margin-left: 320px;
+    color: #ffffff;
+    background-color: yellow;
+}
+#command {
+    margin-top: 100px;
+    margin-left: 600px;
+    color: #ffffff;
+    background-color: #CC9900;
+}
+#git {
+    margin-top: 190px;
+    margin-left: 840px;
+    color: #ffffff;
+    background-color: #666699;
+}
+#keyboard {
+    margin-top: 220px;
+    margin-left: 570px;
+    color: #ffffff;
+    background-color:#66FF33;
+}
+.block1, .block2, .block3, .block4, .block5, .block6, .block7{
+
+    position:absolute;
+    z-index: -1;
+    display: block;
+    width: 220px;
+    height: 80px;
+    padding-top: 40px;
+    opacity:0.4;
+    border-radius: 5px;
+     filter:blur(5px);
+     -o-filter:blur(5px);
+     -ms-filter:blur(5px);
+     -moz-filter:blur(5px);
+     -webkit-filter:blur(5px);
+
+}
+.block1 {
+     margin-top:50px;
+    margin-left: 500px;
+    background-color: red;
+}
+.block2 {
+      margin-top: 100px;
+      margin-left: 140px;
+      background-color: blue;
+
+    }
+
+.block3 {
+      margin-left: 600px;
+      margin-top: 340px;
+      background-color: green;
+}
+.block4 {
+      margin-left: 660px;
+      margin-top: 200px;
+      background-color: purple;
+}
+.block5 {
+      margin-left: 300px;
+      margin-top: 300px;
+      background-color: white;
+}
+.block6 {
+      margin-left: 50px;
+      margin-top: 20px;
+      background-color: orange;
+}
+.block7 {
+      margin-left: 700px;
+      margin-top: 30px;
+      background-color: green;
+}
+
+
+
+.navbar {
+  margin-left:400px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color:#CAD8E5;
+
+}
+/*a {color:#CAD8E5;
+    text-decoration: none;}      /* unvisited link */
+/*a:visited {color:#CAD8E5;
+          text-decoration: none;}  /* visited link */
+/*a:hover {color:white;}  /* mouse over link */
+/*a:active {color:#CAD8E5;}

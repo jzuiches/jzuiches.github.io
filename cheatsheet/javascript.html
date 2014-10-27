@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+   <link type="text/css" rel = "stylesheet" href="individual_cheet.css"/>
+   <script type="text/javascript" src="read_more.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+   <title>Cheatsheet</title>
+ </head>
+   <body>
+   <header>
+        <a class="logo" href="cheatsheet.html">DBC Cheatsheet</a>
+        <nav>
+           <ul class="site-nav" role="navigation">
+          <li id="menu-item-ruby" class="menu-item"><a href="ruby.html">Ruby</a></li>
+<li id="menu-item-html" class="menu-item" ><a href="html.html">HTML</a></li>
+<li id="menu-item-css" class="menu-item" ><a href="css.html">CSS</a></li>
+<li id="menu-item-javascript" class="menu-item" ><a href="javascript.html">Javascript</a></li>
+<li id="menu-item-git" class="menu-item" ><a href="git.html">GIT</a></li>
+<li id="menu-item-command" class="menu-item" ><a href="command.html">Command line</a></li>
+<li id="menu-item-sql" class="menu-item" ><a href="sql.html">SQL</a></li>
+<li id="menu-item-keyboard" class="menu-item" ><a href="keyboard.html">Keyboard Shortcuts</a></li>
+
+
+          </ul>
+          <h3>Javascript</h3>
+</header>
+<!-- <div class = "sidebar">
+<h4><a>Top ten ruby methods</a></h4>
+<h4><a>Some Ruby loops</a></h4>
+<h4><a>Other stuff</a></h4>
+</div> -->
+<div class = "paper">
+  <h2>Javascript Objects</h2>
+  <p>There are two ways to construct a javascript object. Literal notation and constructor notation. Literal notation looks like this:</p>
+  <p><code>var snoopy = {
+    species: "beagle",
+    age: 10
+};</code></p>
+<p>Constructor notation looks like this:</p>
+<p><code>var buddy = new Object();
+buddy.species = "golden retriever";
+buddy.age = 5;</code></p>
+<p>Creating and calling a function:</p>
+<p><code>var multiply = function (x, y) {
+    return x * y;
+};
+
+multiply(2, 3);</code></p>
+<p>A function inside an object is called a method:</p>
+<p><code>var bob = new Object();
+bob.name = "Bob Smith";
+bob.age = 30;
+// this time we have added a method, setAge
+bob.setAge = function (newAge){
+  bob.age = newAge;
+};</code></p>
+<p>To call a method first type the object then dot notation for method:</p>
+<p><code>bob.setAge(40);</code></p>
+<p>Methods can make calculation with the object's properties not only parameters given.</p>
+<p><code>var bob = new Object();
+bob.age = 17;
+// this time we have added a method, setAge
+bob.setAge = function (newAge){
+  bob.age = newAge;
+};
+
+bob.getYearOfBirth = function () {
+  return 2014 - bob.age;
+};</code></p>
+<p>You can create a method that works for many objects by using the keyword "this":</p>
+<p><code>var setAge = function (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+bob.setAge = setAge;
+</code></p>
+<p>You have to set the method equal to itself before calling it:</p>
+<p><code>var susan = new Object();
+susan.age = 25;
+susan.setAge = setAge;
+susan.setAge(35);</code></p>
+<p>A method that is created with "this" but also with a specific object name will not have to be set:</p>
+<p><code>var rectangle = new Object();
+rectangle.height = 3;
+rectangle.width = 4;
+// here is our method to set the height
+rectangle.setHeight = function (newHeight) {
+  this.height = newHeight;
+};<code></p>
+<p>You can make your own object constructors:</p>
+<p><code>function Person(name,age) {
+  this.name = name;
+  this.age = age;
+}</code></p>
+<p>FOR LOOPS</p>
+<p><code>for ( initialization; condition; increment) { // code to run each iteration }</code></p>
+<p><code>var i;
+for (i = 0; i < 2; i++) {
+  console.log("i is now equal to " + i);
+}</code></p>
+<p>WHILE LOOP</p>
+<p><code>var i = 0;
+while ( i < 2 ) {
+  console.log( "i is now " + i );
+  i++;
+}</code></p>
+<p>
+
+
+
+
+<ol>
+  <li>#each</li>
+  <li>#map</li>
+  <li>#sort</li>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+  <li>#collect</li>
+  <li>#length</li>
+  <li>#reverse</li>
+  <li>#push</li>
+  <li>#pop</li>
+  <li>#slice</li>
+  <li>#concat</li>
+</ol>
+</div>
+<div class = "paper">
+  <h2>Ruby Loops</h2>
+  <p>These are some of the more popular built-in methods available to ruby arrays. Arrays are important and are less intuitive than other types like strings, integers, or hashes. Some methods for those types of objects are below the top ten.</p>
+
+<ol>
+  <li>#each</li>
+  <li>#map</li>
+  <li>#sort</li>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+</div>
+<div class = "paper">
+  <h2>Other good things to know</h2>
+  <p>These are some of the more popular built-in methods available to ruby arrays. Arrays are important and are less intuitive than other types like strings, integers, or hashes. Some methods for those types of objects are below the top ten.</p>
+
+<ol>
+  <li>#each</li>
+  <li>#map</li>
+  <li>#sort</li>
+  <p class="read-more"><a href="#" class="button">Read More</a></p>
+</div>
+  </html>

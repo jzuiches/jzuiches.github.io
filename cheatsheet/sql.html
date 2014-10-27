@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+   <link type="text/css" rel = "stylesheet" href="individual_cheet.css"/>
+   <script type="text/javascript" src="read_more.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+   <title>Cheatsheet</title>
+ </head>
+   <body>
+   <header>
+        <a class="logo" href="cheatsheet.html">DBC Cheatsheet</a>
+        <nav>
+           <ul class="site-nav" role="navigation">
+          <li id="menu-item-ruby" class="menu-item"><a href="ruby.html">Ruby</a></li>
+<li id="menu-item-html" class="menu-item" ><a href="html.html">HTML</a></li>
+<li id="menu-item-css" class="menu-item" ><a href="css.html">CSS</a></li>
+<li id="menu-item-javascript" class="menu-item" ><a href="javascript.html">Javascript</a></li>
+<li id="menu-item-git" class="menu-item" ><a href="git.html">GIT</a></li>
+<li id="menu-item-command" class="menu-item" ><a href="command.html">Command line</a></li>
+<li id="menu-item-sql" class="menu-item" ><a href="sql.html">SQL</a></li>
+<li id="menu-item-keyboard" class="menu-item" ><a href="keyboard.html">Keyboard Shortcuts</a></li>
+
+
+          </ul>
+          <h3>SQL</h3>
+</header>
+<!-- <div class = "sidebar">
+<h4><a>Top ten ruby methods</a></h4>
+<h4><a>Some Ruby loops</a></h4>
+<h4><a>Other stuff</a></h4>
+</div> -->
+<div class = "paper">
+  <h2>SQL basics</h2>
+  <p>
+
+<ol>
+  <li><code>sqlite3 test.db</code> shows the version of sql on the computer</li>
+  <li><code>ls -l</code> shows that it created a db (this is command line code)</li>
+  <li><code>sqlite3</code> this gets you in to the sqlite prompt</li>
+
+  <li><code>CREATE TABLE person (<br>
+    id INTEGER PRIMARY KEY,<br>
+    first_name TEXT,<br>
+    last_name TEXT,<br>
+    age INTEGER<br>
+);<br></code> This creates the schema for a database. It can be made in sqlite prompt or in .sql file</li>
+  <li><code>.quit</code>this gets you out of the sqlite prompt</li>
+  <li><code>;</code>if you get stuck in prompt this is probably what's missing</li>
+  <li><code>.schema</code>this lets you look at the schema. The database must be loaded with <code>sqlite3 ex2.db</code></li>
+  <li><code>INSERT INTO person (id, first_name, last_name, age)
+    VALUES (0, "Zed", "Shaw", 37);</code> this is an .sql file that will insert info into a database. first parens is column, second is row.</li>
+  <li><code>-echo</code>this command prints out what the computer is doing. the command it is doing is after echo</li>
+  <li><code>-column</code> The full line is sqlite3 -column ex3.db < ex6.sql. This access the column from the database requested using the select method written in the sql file.</li>
+  <li><code>-header</code> seems to do the same thing? as column</li>
+  <li><code>cat << EOF > ~/.sqliterc
+.headers on
+.mode column
+EOF</code>This is why header and column look the same because this was set as the default.
+  <li><code>SELECT pet.id, pet.name, pet.age, pet.dead
+    FROM pet, person_pet, person
+    WHERE
+    pet.id = person_pet.pet_id AND
+    person_pet.person_id = person.id AND
+    person.first_name = "Zed";</code> This is a query joining person and pet tables through the person_pet table using AND instead of join.</li>
+    <li><code>DELETE FROM pet WHERE dead = 1;</code>This is the syntax for deleting a row that has column(dead) equal to 1,</li>
+    <li><code>SELECT</code>usually means give me this row</li>
+    <li><code>FROM</code>means from this table</li>
+    <li><code>WHERE</code>means here is the beginning of a condition that needs to be met for the selected row</li>
+    <li><code>IN</code>this is where it can start to get convoluted. It can start a subquery or it can mean in a group that I give you surrounded by (). Like IN('France','Germany'). this is IN the rows named France and Germany.</li>
+    <li><code>''</code>values from columns need to be in quotes if they are text or you'll get errors.</li>
+    <li><code>LIKE</code>permits pattern matching with % that can go before or after a letter to see if it starts or end with the letter. Like 'D%' asks if it starts with D.</li>
+    <li><code>BETWEEN</code>allows for range checking. BETWEEN 1 AND 100.
+    <li><code>AND</code>used like a normal boolean. Example above.</li>
+    <li><code>UPDATE person SET first_name = "Hilarious Guy"
+    WHERE first_name = "Joe";</code>This changes the original value of first name from "Joe" to "Hilarious Guy".</li>
+    <li><code>SELECT *
+  FROM game JOIN goal ON (id=matchid)</li>This code selects all columns from two tables. Tables are named game and goal and it is joining on an id number that is the same for both. The id and match id are what creates the relation between these two table.</li>
+  <li><code>SELECT name FROM world
+  WHERE population >
+     (SELECT population FROM world
+      WHERE name='Russia')</code> This is a nested SELECT statement it's selecting the name of a country in the world that has a population greater than that population of Russia.</li>
+  <li><code>SUM</code>Adds all the numbers of a column. Example:SELECT SUM(population)
+FROM world; This gives the sum of the column population from the table world. Make sure there are no spaces between SUM and ().
+  <li><code>DISTINCT</code>lists the distinct values from a column. Example: SELECT DISTINCT continent FROM world;
+  <li><code>COUNT</code>It counts the number of rows for a given constraint. Example:SELECT COUNT(name) FROM world
+WHERE area > 1000000; this counts how many names are in the column name from the world table that have area over 10 million.
+<li><code>GROUP BY</code>It finds the distinct value of that column and then lists it. Example: SELECT continent, COUNT(name) FROM world
+GROUP BY continent; This selects the column and number of countries from the world and groups it together by the distinct values in the continent column which are the continent names.
+</ol>
+<strong>Datatypes and Storage Class</strong>
+<p>
+NULL. The value is a NULL value.</p>
+
+INTEGER. The value is a signed integer, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
+
+REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.
+
+TEXT. The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+
+BLOB. The value is a blob of data, stored exactly as it was input.</p>
+
+
+</div>
+
+</div>
+  </html>
