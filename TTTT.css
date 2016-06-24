@@ -1,0 +1,35 @@
+html {
+  background: url("cheatsheet/images/multiverse.jpg") no-repeat center center ;
+  background-size: cover;
+}
+.header {
+        margin-top:200px;
+        font-size: 75px;
+        font-family: ""Times New Roman", cursive, sans-serif";
+        color:white;
+        text-align:center;
+        text-shadow: 2px 2px #5A4E41;
+}
+h3  {
+    font-size:40px;
+}
+.line-separator {
+  height:5px;
+  background:#CAD8E5;
+  border-bottom:2px solid#5A4E41;
+  margin-left:400px;
+  margin-right:-10px;
+  border-radius:7px;
+}
+.navbar {
+  margin-left:400px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color:#CAD8E5;
+
+}
+a {color:#CAD8E5;
+    text-decoration: none;}      /* unvisited link */
+a:visited {color:#CAD8E5;
+          text-decoration: none;}  /* visited link */
+a:hover {color:white;}  /* mouse over link */
+a:active {color:#CAD8E5;}

@@ -56,6 +56,9 @@ a:active {color:#CAD8E5;}
 p   {
     font-family: "Book Antiqua","Palatino Linotype",  Palatino, serif;
 }
-img {
-  height: 100px;
+img  {
+  height:400px;
+  width:350px;
+  border-radius:20px;
+  margin-left: 450px:;
 }
