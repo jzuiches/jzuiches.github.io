@@ -9,25 +9,16 @@ body{background: url("images/Shastalight.jpg") no-repeat center center fixed;
       padding:0;
       height:100%;
 }
-
-
-
-.header {
-        margin-top:200px;
-        font-size: 75px;
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        color:white;
-        margin-left: 600px;
-        padding:10px;
-
+.name{
+  color: black;
 }
+
+
 .line-separator {
   height:5px;
   background:#CAD8E5;
   border-bottom:2px solid#5A4E41;
-  margin-left:300px;
-  margin-right:-10px;
-  border-radius:7px;
+
 }
 .navbar {
   margin-left:300px;
@@ -55,8 +46,4 @@ a:active {color:#CAD8E5;}
   height:5px;
   background:#CAD8E5;
   border-bottom:2px solid#5A4E41;
-  margin-left:20px;
-  margin-right:20px;
-  margin-bottom:20px;
-  border-radius:7px;
 }
