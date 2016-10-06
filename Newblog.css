@@ -10,10 +10,6 @@ body{background: url("images/Shastalight.jpg") no-repeat center center fixed;
       height:100%;
 }
 
-#wrapper {
-      min-height:100%;
-      position:relative;
-}
 
 
 .header {
