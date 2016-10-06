@@ -9,8 +9,8 @@ body{background: url("images/Shastalight.jpg") no-repeat center center fixed;
       padding:0;
       height:100%;
 }
-.name{
-  color: black;
+h1{
+  
   font-size: 10em;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
